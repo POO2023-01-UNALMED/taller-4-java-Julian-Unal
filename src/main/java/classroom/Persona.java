@@ -33,13 +33,11 @@ public class Persona {
     public Persona(String nombre) {
         this.nombre = nombre;
         totalPersonas++;
-        this.cedula = defaultCedulas;
-        defaultCedulas++;
+        this.cedula = 1;
     }
 
     public Persona() {
-        this.cedula = defaultCedulas;
-        defaultCedulas++;
+        this.cedula = 0;
     }
 
     public long getCedula() {
